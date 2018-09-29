@@ -20,7 +20,8 @@ public class Sessao {
 	private Sala sala;
 	@ManyToOne
 	private Filme filme;
-	private BigDecimal preco;
+	private BigDecimal preco = new BigDecimal(0);
+	
 	public Sessao(){
 	}
 
