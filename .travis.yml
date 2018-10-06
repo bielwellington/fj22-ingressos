@@ -8,3 +8,8 @@ cache:
   - "$HOME/.m2/"
 script:
 - mvn clean package
+- mvn sonar:sonar \
+  -Dsonar.projectKey=bielwellington_fj22-ingressos \
+  -Dsonar.organization=bielwellington-github \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=1a276971d4f75d94edef42f92d45486461d5e973
