@@ -16,6 +16,10 @@ public class Carrinho {
 	public List<Ingresso> getIngressos() {
 		return ingressos;
 	}
+	
+	public Compra toCompra(){
+		return new Compra(ingressos);
+	}
 
 	public void setIngressos(List<Ingresso> ingressos) {
 		this.ingressos = ingressos;
